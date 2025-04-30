@@ -1,9 +1,8 @@
 public class MyHashTable<K, V> {
-
-    static class HashNode<K, V> {
+    private static class HashNode<K, V> {
         private K key;
         private V value;
-        HashNode<K, V> next;
+        private HashNode<K, V> next;
 
         public HashNode(K key, V value) {
             this.key = key;
@@ -117,8 +116,8 @@ public class MyHashTable<K, V> {
         }
         return null;
     }
+
     public HashNode<K, V>[] getChainArray() {
         return chainArray;
     }
-
 }
